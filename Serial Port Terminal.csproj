@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Serial Port Terminal.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -86,14 +89,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\HACS\HACS\HACS.csproj">
-      <Project>{8582f64c-f92b-4d67-8b1a-d3c4cdd69d77}</Project>
-      <Name>HACS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Utilities\Utilities\Utilities.csproj">
       <Project>{d112de6f-9832-4dab-b941-5cbde5863b69}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Serial Port Terminal.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
